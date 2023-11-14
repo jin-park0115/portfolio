@@ -2,6 +2,15 @@
 .container{
   height: 100vh;
 }
+.scroll-progress{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 0;
+  background-color: rgb(75, 187, 221); /* 게이지 바의 색상을 설정하세요. */
+  z-index: 9999;
+}
 .gnb{
   display: flex;
   justify-content: space-between;
@@ -20,6 +29,10 @@
 .navbar ul li{
   font-weight: bold;
   margin-right: 12px;
+  transition: color 0.5s ease;
+}
+.navbar ul li:hover{
+  color: #007bff;
 }
 .navbar ul li:last-child{
   margin-right: 0px;
@@ -34,12 +47,16 @@
 .about{
   display: flex;
   justify-content: space-evenly;
+  height: 600px;
+  background-color: #fff;
+  box-shadow: 1px 1px 8px 1px rgba(0,0,0,.25);
 }
 .about .box{
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   background-color: blue;
   border-radius: 50%;
+  margin-top: 50px;
 }
 .about-text-wrap{
   display: flex;
