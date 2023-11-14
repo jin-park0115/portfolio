@@ -1,6 +1,5 @@
 @charset "utf-8";
 .container{
-  position: relative;
   height: 100vh;
 }
 .gnb{
@@ -8,7 +7,6 @@
   justify-content: space-between;
   width: 70%;
   margin: 0 auto;
-  /* margin-top: 16px; */
   padding-top: 16px;
   align-items: center;
 }
@@ -17,7 +15,7 @@
 }
 .navbar ul{
   display: flex;
-  color: #fff;
+  color: #222;
 }
 .navbar ul li{
   font-weight: bold;
@@ -29,34 +27,100 @@
 
 .first-section{
   width: 70%;
+  height: 100vh;
   margin: 0 auto;
+  margin-top: 5%;
 }
-.main{
+.about{
   display: flex;
+  justify-content: space-evenly;
 }
-.main .box{
-  position: absolute;
+.about .box{
   width: 600px;
   height: 600px;
   background-color: blue;
   border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
 }
-.main .text-box{
-  position: absolute;
-  left: 60%;
-  top: 40%;
-  transform: translate(-50%, -50%);
-  color: #fff;
+.about-text-wrap{
+  display: flex;
+  flex-direction: column;
+}
+.about .text-box{
+
+  color: #222;
   font-weight: bold;
   font-size: 2rem;
+  margin-top: 30%;
+  width: 450px;
+  height: 130px;
 }
 .about-me{
-  position: absolute;
-  top: 60%;
-  width: 400px;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  color: #fff;
+  width: 450px;
+  color: #222;
+  margin-top: 10%;
+}
+
+
+.second-section{
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  /* background-color: aquamarine; */
+}
+.skills{
+  width: 70%;
+  margin: 0 auto;
+}
+.skills-text{
+  margin-bottom: 24px;
+}
+.skills-text p,
+.tool-text p{
+  font-size: 44px;
+  font-weight: bold;
+}
+.icon-container{
+  display: flex;
+  gap: 20px;
+}
+.icon-wrap{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.icon-box1,
+.icon-box2,
+.icon-box3,
+.icon-box4,
+.icon-box5,
+.icon-box6{
+  display: flex;
+}
+.icon-box1 img,
+.icon-box2 img,
+.icon-box3 img,
+.icon-box4 img,
+.icon-box5 img,
+.icon-box6 img{
+  width: 120px;
+  height: 120px;
+}
+.explanation{
+  /* display: none; */
+}
+
+.tool-text{
+  margin-top: 16px;
+}
+
+.tool-icon1,
+.tool-icon2,
+.tool-icon3{
+  display: flex;
+}
+
+.tool-wrap img{
+  width: 120px;
+  height: 120px;
 }
