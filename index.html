@@ -9,6 +9,18 @@
 </head>
 <body>
   <div class="container">
+    <!-- <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul> -->
     <div class="scroll-progress" id="scroll-progress"></div>
     <header>
       <div class="gnb">
@@ -29,7 +41,9 @@
     <section class="first-section">
       <div class="about">
         <div>
-          <div class="box"></div>
+          <div class="box">
+            <img src="./img/증명사진.jpg" alt="증명 사진">
+          </div>
         </div>
         <div class="about-text-wrap">
           <div class="text-box">
@@ -45,104 +59,90 @@
         <div class="skills-text">
           <p>Skills</p>
         </div>
-        <div class="icon-container">
-          <div class="icon-wrap">
-            <div class="icon-box1">
-              <img src="./img/html_icon.svg" alt="html 아이콘">
-              <div class="explanation">
-                <h1>HTML5</h1>
-                <p>
-                  웹접근성, 표준성을 준수하며 시멘틱태그를 이용해 마크업 할 수 있습니다.
-                </p>
-                <!-- CSS3position, display를 적절히 사용하여 반응형웹을 적용할 수 있습니다. -->
+        <div class="skills-box">
+          <div class="skills-card skills-html">
+            <div class="card-inner">
+              <div class="front">
+                <p>HTML</p>
+              </div>
+              <div class="back">
+                <p>Front-end markup Language</p>
               </div>
             </div>
-            <div class="icon-box2">
-              <img src="./img/css_icon.svg" alt="css 아이콘">
-              <div class="explanation">
-                <h1>CSS3</h1>
-                <p>
-                  display를 적절히 사용하여 반응형웹을 적용할 수 있습니다.
-                </p>
-              </div>
-            </div>
-            <div class="icon-box3">
-              <img src="./img/js_icon.svg" alt="자바스크립트 아이콘">
-              <div class="explanation">
-                <h1>Javascript</h1>
-                <p>
-                  Javascript의 배열, 메소드, DOM을 이해하며 다양한 상황에 적용할 수 있습니다.
-                </p>
-              </div>
-            </div>
-          </div> <!-- 아이콘 wrap1 -->
-          <div class="icon-wrap">
-            <div class="icon-box4">
-              <img src="./img/react_icon.svg" alt="react 아이콘">
-              <div class="explanation">
-                <h1>React.js</h1>
-                <p>
-                  React 구조와 여러가지 hook들에 대한 이해를 바탕으로, 범용적이고 재사용 가능한 컴포넌트를 설계하는 데 노력하고 있습니다.
-                </p>
-              </div>
-            </div>
-            <div class="icon-box5">
-              <img src="./img/ts_icon.svg" alt="typescript 아이콘">
-              <div class="explanation">
-                <h1>TypeScript</h1>
-                <p>
-                  TypeScript를 조합하여 개발하는 데에는 깊은 이해를 기반으로 하고 있지만, 가끔은 혼란스러운 부분이나 개선이 필요한 부분이 발생할 수 있습니다.
-                </p>
-              </div>
-            </div>
-            <div class="icon-box6">
-              <img src="./img/styled-componets_icon.svg" alt="styled-components 아이콘">
-              <div class="explanation">
-                <h1>styled-components</h1>
-                <p>
-                  styled-components를 활용한 프로젝트를 진행하면서 경험을 쌓아가며, 보다 효율적이고 일관된 스타일링을 구현할 수 있도록 노력하고 있습니다. 
-                </p>
-              </div>
-            </div>
-          </div> <!-- 아이콘 wrap2 -->
-        </div> <!-- 아이콘 컨테이너 -->
-        <div class="toolcontainer">
-          <div class="tool-text">
-            <p>USING TOOL</p>
           </div>
-          <div class="tool-wrap">
-            <div class="tool-icon1">
-              <img src="./img/github_icon.svg" alt="깃허브 아이콘">
-              <div class="explanation">
-                <h1>Github</h1>
-                <p>
-                  commit, push, pull, clone 등 git 명령어를 사용하여 레파지토리에 접근할 수 있습니다.
-                </p>
+          <div class="skills-card skills-css">
+            <div class="card-inner">
+              <div class="front">
+                <p>CSS</p>
+              </div>
+              <div class="back">
+                <p>Front-end markup Language</p>
               </div>
             </div>
-            <div class="tool-icon2">
-              <img src="./img/vscode_icon.svg" alt="vscode 아이콘">
-              <div class="explanation">
-                <h1>VS Code</h1>
-                <p>
-                  주로 사용하는 코딩툴이며, 코딩에 편리한 확장프로그램들을 설치해 사용하고 있습니다.
-                </p>
+          </div>
+          <div class="skills-card skills-js">
+            <div class="card-inner">
+              <div class="front">
+                <p>JavaScript</p>
+              </div>
+              <div class="back">
+                <p>Front-end markup Language</p>
               </div>
             </div>
-            <div class="tool-icon3">
-              <img src="./img/figma_icon.svg" alt="Figma 아이콘">
-              <div class="explanation">
-                <h1>Figma</h1>
-                <p>
-                  지금까지의 경험을 토대로 디자인 작업을 수행하고 있지만, 아직은 더 많은 기능과 팁을 배워야 할 필요가 있습니다. 
-                </p>
+          </div>
+          <div class="skills-card skills-ts">
+            <div class="card-inner">
+              <div class="front">
+                <p>TypeScript</p>
+              </div>
+              <div class="back">
+                <p>Front-end markup Language</p>
+              </div>
+            </div>
+          </div>
+          <div class="skills-card skills-react">
+            <div class="card-inner">
+              <div class="front">
+                <p>React</p>
+              </div>
+              <div class="back">
+                <p>Front-end markup Language</p>
+              </div>
+            </div>
+          </div>
+          <div class="skills-card skills-styledcomponents">
+            <div class="card-inner">
+              <div class="front">
+                <p>Styled-components</p>
+              </div>
+              <div class="back">
+                <p>Front-end markup Language</p>
+              </div>
+            </div>
+          </div>
+          <div class="skills-card skills-github">
+            <div class="card-inner">
+              <div class="front">
+                <p>Github</p>
+              </div>
+              <div class="back">
+                <p>Front-end markup Language</p>
+              </div>
+            </div>
+          </div>
+          <div class="skills-card skills-figma">
+            <div class="card-inner">
+              <div class="front">
+                <p>Figma</p>
+              </div>
+              <div class="back">
+                <p>Front-end markup Language</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section> <!-- 두번째 섹션 -->
-
 
   </div>
   <script src="./typing-animation.js"></script>
