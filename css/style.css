@@ -141,10 +141,13 @@ header{
 .navbar ul li{
   font-weight: bold;
   margin-right: 12px;
-  transition: color 0.5s ease;
+  transition: color 0.3s ease;
   cursor: pointer;
 }
 .navbar ul li:hover{
+  color: #bad5f3;
+}
+.navbar ul li.active{
   color: #007bff;
 }
 .navbar ul li:last-child{
