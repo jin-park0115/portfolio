@@ -112,8 +112,16 @@
   left: 0;
   height: 5px;
   width: 0;
-  background-color: rgb(75, 187, 221); /* 게이지 바의 색상을 설정하세요. */
+  background-color: rgb(75, 187, 221);
   z-index: 9999;
+}
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 99;
+  background-color: transparent;
 }
 .gnb{
   display: flex;
@@ -149,10 +157,13 @@
 .first-section{
   width: 70%;
   height: 100vh;
+  padding-top: 150px;
   margin: 0 auto;
-  margin-top: 5%;
+  border-bottom: 2px dashed #007bff;
 }
 .about{
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
   height: 600px;
@@ -160,7 +171,7 @@
   box-shadow: 1px 1px 8px 1px rgba(0,0,0,.25);
 }
 .about .box{
-  width: 500px;
+  width: 460px;
   height: 500px;
   border-radius: 50%;
   margin-top: 50px;
@@ -191,58 +202,127 @@
 /* 첫번째 섹션 */
 
 .second-section{
+  width: 70%;
+  height: 100vh;
+  margin: 0 auto;
+  border-bottom: 2px dashed #007bff
+}
+.second-section h2{
+  padding-top: 2em;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.second-section ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10em;
+}
+.second-section ul li{
+  display: flex;
+  width: 980px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.second-section ul li:last-child{
+  margin-bottom: 0px;
+}
+.skills-name{
+  width: 180px;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ability-bar{
+  background-color: #eee;
+  width: 800px;
+  border-radius: 5px;
+  height: 2em;
+}
+.ability-gage{
   width: 80%;
+  height: 100%;
+}
+.Js,
+.React{
+  width: 70%;
+}
+.Ts{
+  width: 40%;
+}
+.Sc{
+  width: 60%;
+}
+.Gh{
+  width: 50%;
+}
+.ability-percent{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  justify-content: flex-end;
+  border-radius: 0 15px 15px 0;
+  background: linear-gradient(90deg,#36D1DC,#5B86E5);
+}
+.percent{
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+
+/* 두번째 섹션 */
+
+.third-section{
+  background-color: #007bff;
+  width: 70%;
   height: 100vh;
   margin: 0 auto;
 }
-.skills{
-  width: 70%;
-  margin: 0 auto;
+.projects{
+
 }
-.skills-text{
-  margin-bottom: 24px;
-}
-.skills-text p,
-.tool-text p{
+.project-text p{
   font-size: 44px;
   font-weight: bold;
 }
-.skills-card{
-  perspective: 1000px;
-  width: 100px;
-  height: 150px;
-  transform-style: preserve-3d;
-  transition: transform 0.5s;
+.proje-box{
+  display: flex;
 }
-.skills-card:hover{
-  transform: translateY(180deg);
-}
-.card-inner{
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.5s;
-}
-.skills-card:hover .card-inner {
+.flipped .card{
   transform: rotateY(180deg);
 }
-.front,
-.back {
+.flip{
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+}
+/* .flip:hover .card{
+  transform: rotateY(180deg);
+} */
+.card{
   width: 100%;
   height: 100%;
+  position: relative;
+  transition: .4s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+.project-front,
+.project-back{
   position: absolute;
+  width: 100%;
+  height: 100%;
   backface-visibility: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #fff;
 }
-.back {
+.project-front{
+  background: tomato;
+}
+.project-back{
+  background-color: royalblue;
   transform: rotateY(180deg);
 }
-.skills-card p {
-  margin: 0;
-  font-size: 16px;
-  color: #222;
-}
-/* 두번째 섹션 */

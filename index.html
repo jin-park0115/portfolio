@@ -55,97 +55,150 @@
     </section> <!-- 첫번째 섹션 -->
 
     <section class="second-section">
-      <div class="skills">
-        <div class="skills-text">
-          <p>Skills</p>
+      <div>
+        <h2>Skills</h2>
+      </div>
+      <ul>
+        <li>
+          <div class="skills-name">HTML5</div>
+          <div class="ability-bar">
+            <div class="ability-gage">
+              <div class="ability-percent">
+                <span class="percent">
+                  80%
+                </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="skills-name">CSS3</div>
+          <div class="ability-bar">
+            <div class="ability-gage">
+              <div class="ability-percent">
+                <span class="percent">
+                  80%
+                </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="skills-name">JavaScript</div>
+          <div class="ability-bar">
+            <div class="ability-gage Js">
+              <div class="ability-percent">
+                <span class="percent">
+                  70%
+                </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="skills-name">TypeScript</div>
+          <div class="ability-bar">
+            <div class="ability-gage Ts">
+              <div class="ability-percent">
+                <span class="percent">
+                  40%
+                </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="skills-name">React</div>
+          <div class="ability-bar">
+            <div class="ability-gage React">
+              <div class="ability-percent">
+                <span class="percent">
+                  70%
+                </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="skills-name">Styled-Components</div>
+          <div class="ability-bar">
+            <div class="ability-gage Sc">
+              <div class="ability-percent">
+                <span class="percent">
+                  60%
+                </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="skills-name">Github</div>
+          <div class="ability-bar">
+            <div class="ability-gage Gh">
+              <div class="ability-percent">
+                <span class="percent">
+                  50%
+                </span>
+              </div>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </section> <!-- 두번째 섹션 -->
+
+    <section class="third-section">
+      <div class="projects">
+        <div class="project-text">
+          <h2>Projects</h2>
         </div>
-        <div class="skills-box">
-          <div class="skills-card skills-html">
-            <div class="card-inner">
-              <div class="front">
-                <p>HTML</p>
+        <div class="projects-box">
+          <div class="flip" id="myFlip">
+            <div class="card">
+              <div class="project-front">
+                <h1>앞면</h1>
               </div>
-              <div class="back">
-                <p>Front-end markup Language</p>
-              </div>
-            </div>
-          </div>
-          <div class="skills-card skills-css">
-            <div class="card-inner">
-              <div class="front">
-                <p>CSS</p>
-              </div>
-              <div class="back">
-                <p>Front-end markup Language</p>
+              <div class="project-back">
+                <h1>뒷면</h1>
               </div>
             </div>
           </div>
-          <div class="skills-card skills-js">
-            <div class="card-inner">
-              <div class="front">
-                <p>JavaScript</p>
+          <div class="flip">
+            <div class="card">
+              <div class="project-front">
+                <h1>앞면</h1>
               </div>
-              <div class="back">
-                <p>Front-end markup Language</p>
-              </div>
-            </div>
-          </div>
-          <div class="skills-card skills-ts">
-            <div class="card-inner">
-              <div class="front">
-                <p>TypeScript</p>
-              </div>
-              <div class="back">
-                <p>Front-end markup Language</p>
+              <div class="project-back">
+                <h1>뒷면</h1>
               </div>
             </div>
           </div>
-          <div class="skills-card skills-react">
-            <div class="card-inner">
-              <div class="front">
-                <p>React</p>
+          <div class="flip">
+            <div class="card">
+              <div class="project-front">
+                <h1>앞면</h1>
               </div>
-              <div class="back">
-                <p>Front-end markup Language</p>
-              </div>
-            </div>
-          </div>
-          <div class="skills-card skills-styledcomponents">
-            <div class="card-inner">
-              <div class="front">
-                <p>Styled-components</p>
-              </div>
-              <div class="back">
-                <p>Front-end markup Language</p>
-              </div>
-            </div>
-          </div>
-          <div class="skills-card skills-github">
-            <div class="card-inner">
-              <div class="front">
-                <p>Github</p>
-              </div>
-              <div class="back">
-                <p>Front-end markup Language</p>
-              </div>
-            </div>
-          </div>
-          <div class="skills-card skills-figma">
-            <div class="card-inner">
-              <div class="front">
-                <p>Figma</p>
-              </div>
-              <div class="back">
-                <p>Front-end markup Language</p>
+              <div class="project-back">
+                <h1>뒷면</h1>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section> <!-- 두번째 섹션 -->
+    </section>
 
   </div>
-  <script src="./typing-animation.js"></script>
+  <script src="./header.js"></script>
   <script src="./scroll-progress.js"></script>
+  <script src="./typing-animation.js"></script>
+  <script src="./ability-bar.js"></script>
+  <script>
+    let flips = document.querySelectorAll('.flip');
+    flips.forEach(function(flip) {
+      flip.addEventListener('click', function() {
+        this.classList.toggle('flipped')
+      })
+    })
+  </script>
 </body>
 </html>
