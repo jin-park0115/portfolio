@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   navbarItems.forEach(function(item, index) {
       item.addEventListener('click', function() {
           scrollToSection(index);
+          setActiveMenuItem(index)
       });
   });
 
