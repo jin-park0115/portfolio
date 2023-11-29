@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 .container{
   /* background: #4e54c8; */
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
@@ -278,30 +277,36 @@ header{
 /* 두번째 섹션 끝*/
 
 .third-section{
-  background-color: #007bff;
   width: 70%;
   height: 100vh;
   margin: 0 auto;
+  border-bottom: 2px dashed #007bff;
 }
 .project-text{
   width: 100%;
   margin: 0 auto;
 }
 .project-text h2{
-  font-size: 44px;
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
+  padding-top: 2em;
+
 }
 .projects-box{
   width: 80%;
   margin: 0 auto;
   position: relative;
+  margin-top: 10%;
 }
 .flipped .card{
   transform: rotateY(180deg);
 }
 .filp img{
   object-fit: cover;
+}
+.flip {
+  box-shadow: 1px 1px 8px 1px rgba(0,0,0,.18);
 }
 .flip1{
   width: 480px;
@@ -314,6 +319,7 @@ header{
   top: 0;
   right: 0;
 }
+
 /* .flip:hover .card{
   transform: rotateY(180deg);
 } */
@@ -372,3 +378,52 @@ header{
 
 
 /* 세번째 섹션 끝 */
+
+.fourth-section{
+  width: 70%;
+  height: 100vh;
+  margin: 0 auto;
+}
+.fourth-section h2{
+  font-size: 2.5rem;
+  padding-top: 2em;
+  text-align: center;
+}
+.post-box{
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 1px 1px 20px 1px rgba(0,0,0,.08);
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.post-box p{
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+.post{
+  width: 80%;
+  height: 80%;
+}
+.contact-icon{
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.contact-icon a{
+  transition: 0.8s;
+}
+.contact-icon a:hover{
+  scale: 1.1;
+}
+.contact-icon i {
+  font-size: 6rem;
+  color: #222;
+}
