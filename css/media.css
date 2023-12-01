@@ -1,0 +1,128 @@
+@media screen and (max-width: 1550px) {
+  .projects-box{
+    margin-top: 8%;
+  }
+  .flip1{
+    width: 28em;
+  }
+  .flip2{
+    width: 31.375em;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .first-section,
+  .second-section,
+  .third-section{
+    width: 85%;
+  }
+  .about .box{
+    width: 80%;
+    height: 70%;
+  }
+  .text-box h1{
+    font-size: 1.2em;
+  }
+  .second-section h2{
+    font-size: 2rem;
+  }
+  .project-text h2{
+    font-size: 2rem;
+  }
+  .flip1{
+    width: 23em;
+    height: 29.25em;
+  }
+  .flip2{
+    width: 26.375em;
+    height: 15.625em;
+  }
+  .contact .title h2{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header-logo {
+    width: 140px;
+  }
+  .first-section{
+    padding-top: 120px;
+  }
+  .about{
+    height: 500px;
+  }
+  .about .text-box{
+    width: 348px;
+    font-size: 1.5rem;
+  }
+  .about-me{
+    margin-top: 0;
+    width: 350px;
+    font-size: 0.9rem;
+  }
+  .second-section ul{
+    margin-top: 7em;
+  }
+  .second-section ul li{
+    width: 820px;
+  }
+  
+  .flip1{
+    width: 22em;
+    height: 25.25em;
+  }
+  .flip2{
+    width: 20.375em;
+    height: 11.625em;
+  }
+  .contact-icon{
+    width: 32%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header{
+    height: 55px;
+  }
+  .header-logo {
+    width: 100px;
+  }
+  .first-section .about{
+    width: 85%;
+    height: 420px;
+  }
+  .first-section .text-box{
+    width: 275px;
+    font-size: 1.3rem;
+  }
+  .first-section .about-me{
+    width: 275px;
+    font-size: 0.7rem;
+  }
+  .second-section ul li{
+    width: 608px;
+  }
+  .second-section ul li .skills-name{
+    align-items: normal;
+    font-size: 1rem;
+  }
+  .projects-box{
+    display: flex;
+  }
+  .flip1{
+    width: 50%;
+
+  }
+  .flip2{
+    width: 50%;
+  }
+  .contact .post-box{
+    width: 390px;
+    height: 560px;
+  }
+  .contact .post-box .post{
+    width: 70%;
+    height: 70%;
+  }
+  .contact-icon{
+    width: 45%;
+  }
+}
