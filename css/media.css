@@ -2,12 +2,6 @@
   .projects-box{
     margin-top: 8%;
   }
-  .flip1{
-    width: 28em;
-  }
-  .flip2{
-    width: 31.375em;
-  }
 }
 @media screen and (max-width: 1440px) {
   .first-section,
@@ -27,14 +21,6 @@
   }
   .project-text h2{
     font-size: 2rem;
-  }
-  .flip1{
-    width: 23em;
-    height: 29.25em;
-  }
-  .flip2{
-    width: 26.375em;
-    height: 15.625em;
   }
   .contact .title h2{
     font-size: 2rem;
@@ -66,14 +52,6 @@
     width: 820px;
   }
   
-  .flip1{
-    width: 22em;
-    height: 25.25em;
-  }
-  .flip2{
-    width: 20.375em;
-    height: 11.625em;
-  }
   .contact-icon{
     width: 32%;
   }
@@ -103,16 +81,6 @@
   .second-section ul li .skills-name{
     align-items: normal;
     font-size: 1rem;
-  }
-  .projects-box{
-    display: flex;
-  }
-  .flip1{
-    width: 50%;
-
-  }
-  .flip2{
-    width: 50%;
   }
   .contact .post-box{
     width: 390px;
