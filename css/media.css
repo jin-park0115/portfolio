@@ -3,18 +3,15 @@
     margin-top: 8%;
   }
 }
+
 @media screen and (max-width: 1440px) {
   .first-section,
   .second-section,
   .third-section{
     width: 85%;
   }
-  .about .box{
-    width: 80%;
-    height: 70%;
-  }
-  .text-box h1{
-    font-size: 1.2em;
+  .about .text-box{
+    font-size: 1.5rem;
   }
   .second-section h2{
     font-size: 2rem;
@@ -26,36 +23,47 @@
     font-size: 2rem;
   }
 }
+
 @media screen and (max-width: 1024px) {
   .header-logo {
     width: 140px;
   }
-  .first-section{
-    padding-top: 120px;
-  }
-  .about{
-    height: 500px;
-  }
   .about .text-box{
-    width: 348px;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
   .about-me{
-    margin-top: 0;
-    width: 350px;
     font-size: 0.9rem;
   }
+
   .second-section ul{
     margin-top: 7em;
+    width: 100%;
   }
-  .second-section ul li{
-    width: 820px;
+  .second-section .percent{
+    font-size: 1rem;
   }
-  
+  .second-section .skills-name{
+    font-size: 1rem;
+  }
+  .second-section .ability-bar{
+    height: 1.5em;
+  }
+  .third-section{
+    height: 150vh;
+  }
+  .box-container{
+    flex-wrap: wrap;
+    gap: 27px;
+  }
+  .flip{
+    width: 45%;
+    height: 26.5em;
+  }
   .contact-icon{
     width: 32%;
   }
 }
+
 @media screen and (max-width: 768px) {
   header{
     height: 55px;
@@ -63,24 +71,62 @@
   .header-logo {
     width: 100px;
   }
-  .first-section .about{
-    width: 85%;
-    height: 420px;
+  .first-section{
+    height: 90vh;
   }
-  .first-section .text-box{
-    width: 275px;
-    font-size: 1.3rem;
+  .about .text-box{
+    font-size: 0.8rem;
   }
-  .first-section .about-me{
-    width: 275px;
+  .about-me{
     font-size: 0.7rem;
   }
-  .second-section ul li{
-    width: 608px;
+  .second-section{
+    height: 80vh;
   }
-  .second-section ul li .skills-name{
-    align-items: normal;
+  .second-section h2{
+    padding-top: 1em;
+    font-size: 1.8rem;
+  }
+  .second-section .percent{
     font-size: 1rem;
+  }
+  .third-section{
+    height: 130vh;
+  }
+  .project-text h2{
+    font-size: 1.8rem;
+  }
+  .box-container{
+    gap: 52px;
+  }
+  .flip{
+    height: 24.5em;
+  }
+  .card-front .img-box{
+    height: 8em;
+  }
+  .card-front .text h2{
+    font-size: 1.3rem;
+  }
+  .card-front .text-wrap .intro{
+    font-size: 0.9rem;
+  }
+  .card-front .text-wrap .addintro{
+    font-size: 0.7rem;
+  }
+  .back-container .period{
+    font-size: 0.9rem;
+  }
+  .back-container .tech p,
+  .back-container .work p{
+    font-size: 0.9rem;
+  }
+  .back-container .tech p span,
+  .back-container .work p span{
+    font-size: 0.7rem;
+  }
+  .button-group button{
+    padding: 9px;
   }
   .contact .post-box{
     width: 390px;
@@ -93,4 +139,88 @@
   .contact-icon{
     width: 45%;
   }
+}
+
+@media screen and (max-width: 425px) {
+  .first-section{
+    height: 80vh;
+  }
+  .about{
+    flex-direction: column;
+  }
+  .about .box-wrap{
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .about .box-wrap .box{
+    width: auto;
+    height: auto;
+    border-radius: 0px;
+  }
+  .about .box-wrap .box img{
+    border-radius: 0px;
+  }
+  .about-text-wrap{
+    width: auto;
+  }
+  .about-text-wrap .about-text-box{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0px 10px 0px;
+    gap: 16px;
+  }
+  .about .text-box{
+    font-size: 0.7rem;
+  }
+  .about-me{
+    font-size: 0.6rem;
+  }
+
+  .second-section{
+    height: 70vh;
+  }
+  .second-section h2{
+    font-size: 1.5rem;
+  }
+  .second-section ul{
+    margin-top: 5em;
+  }
+  .second-section .skills-name{
+    font-size: 0.8rem;
+    width: 18.25em;
+  }
+  .second-section .ability-bar{
+    height: 1.3em;
+  }
+  .second-section .percent{
+    font-size: 0.8rem;
+  }
+  .third-section{
+    height: 164vh;
+  }
+  .third-section .box-container{
+    gap: 10px;
+  }
+  .third-section .box-container .flip{
+    width: 100%;
+  }
+  .project-text h2{
+    font-size: 1.5rem;
+  }
+  .fourth-section{
+    height: 80vh;
+  }
+  .contact .title h2{
+    font-size: 1.5rem;
+  }
+  .contact .post-box{
+    width: 290px;
+    height: 380px;
+  }
+  .contact-icon{
+    width: 70%;
+  }
+
 }
