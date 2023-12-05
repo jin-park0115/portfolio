@@ -167,7 +167,6 @@ header{
   width: 80%;
   margin: 0 auto;
   display: flex;
-  height: 600px;
   background-color: #fff;
   box-shadow: 1px 1px 8px 1px rgba(0,0,0,.25);
 }
@@ -191,20 +190,23 @@ header{
   width: 50%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+.about-text-wrap .about-text-box{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  gap: 24px;
 }
 .about .text-box{
-
   color: #222;
   font-weight: bold;
   font-size: 1.7rem;
-  margin-top: 30%;
-  width: 450px;
-  height: 130px;
+  height: 4em;
 }
 .about-me{
-  width: 450px;
   color: #222;
-  margin-top: 10%;
 }
 
 /* 첫번째 섹션 끝*/
@@ -224,27 +226,31 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
+  margin: 0 auto;
   margin-top: 10em;
 }
 .second-section ul li{
   display: flex;
-  width: 980px;
+  width: 100%;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
 }
 .second-section ul li:last-child{
   margin-bottom: 0px;
 }
 .skills-name{
-  width: 180px;
+  width: 11.25em;
   font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .ability-bar{
   background-color: #eee;
-  width: 800px;
+  width: 50em;
   border-radius: 5px;
   height: 2em;
 }
@@ -306,7 +312,7 @@ header{
   gap: 8px;
 }
 .flip{
-  width: 50%;
+  width: 33.333%;
   height: 37.5em;
   display: flex;
   flex-direction: column;
@@ -340,6 +346,49 @@ header{
 }
 .card-back{
   transform: rotateY(180deg);
+}
+.text-wrap{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  margin-top: 2em;
+}
+.text-wrap .text h2{
+  text-align: center;
+  font-family: 'BookkMyungjo-Bd', sans-serif;
+}
+.text-wrap p{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.text-wrap .intro{
+  font-size: 1.1rem;
+}
+.text-wrap .addintro{
+  font-size: 0.9rem;
+}
+.back-container{
+  padding: 20px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.back-wrap{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.back-container .period,
+.back-container .tech,
+.back-container .work{
+  font-weight: 600;
+}
+.back-container .tech p span,
+.back-container .work p span{
+  font-weight: normal;
+  font-size: 0.9rem;
 }
 .button-group{
   display: flex;
