@@ -2,6 +2,9 @@
   .projects-box{
     margin-top: 8%;
   }
+  .about .text-box{
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 1440px) {
@@ -67,6 +70,24 @@
 @media screen and (max-width: 768px) {
   header{
     height: 55px;
+  }
+  .hamburger-menu{
+    display: block;
+  }
+  .navbar{
+    display: none;
+  }
+  .navbar.show{
+    display: block;
+    position: absolute;
+    top: 3.125em;
+    right: 2.3125em;
+    background-color: rgba(229, 227, 227, 0.7)
+  }
+  .navbar.show ul{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 10px;
   }
   .header-logo {
     width: 100px;
@@ -142,6 +163,9 @@
 }
 
 @media screen and (max-width: 425px) {
+  .header-logo{
+    width: 80px;
+  }
   .first-section{
     height: 80vh;
   }
@@ -208,9 +232,6 @@
   }
   .project-text h2{
     font-size: 1.5rem;
-  }
-  .fourth-section{
-    height: 80vh;
   }
   .contact .title h2{
     font-size: 1.5rem;

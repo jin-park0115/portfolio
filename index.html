@@ -30,7 +30,12 @@
         <div class="header-logo">
           <img src="./img/ParkJin.svg" alt="이름 로고">
         </div>
-        <div class="navbar">
+        <button class="hamburger-menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+         <div class="navbar">
           <ul>
             <li>About</li>
             <li>Skills</li>
@@ -287,6 +292,9 @@
         </div>
       </div>
     </section>
+    <div class="top-btn" onclick="scrollToTop()">
+      <i class="fas fa-arrow-up"></i>
+    </div>
 
   </div>
   <script src="./Js/header.js"></script>
@@ -301,6 +309,18 @@
         this.classList.toggle('flipped')
       })
     })
+    function toggleMenu() {
+      const hamburger = document.querySelector('.hamburger-menu')
+      const navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('show')
+      hamburger.classList.toggle('active')
+    }
+    function scrollToTop() {
+      window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
   </script>
 </body>
 </html>
