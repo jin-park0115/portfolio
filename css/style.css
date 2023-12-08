@@ -249,6 +249,13 @@ header{
 .about-me{
   color: #222;
 }
+.about-me span{
+  color: #007bff;
+  font-weight: bold;
+}
+.about-me span:nth-child(2){
+  color: #d2403d;
+}
 
 /* 첫번째 섹션 끝*/
 
