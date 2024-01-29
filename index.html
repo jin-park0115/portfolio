@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/init.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/media.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <script src="https://kit.fontawesome.com/ba53429bfc.js" crossorigin="anonymous"></script>
-  <title>jinPortfolio</title>
-</head>
-<body>
-  <div class="container">
-    <!-- <ul class="circles">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/init.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/ba53429bfc.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>jinPortfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <ul class="circles">
       <li></li>
       <li></li>
       <li></li>
@@ -26,312 +32,352 @@
       <li></li>
       <li></li>
     </ul> -->
-    <div class="scroll-progress" id="scroll-progress"></div>
-    <header>
-      <div class="gnb">
-        <div class="header-logo">
-          <img src="./img/ParkJin.svg" alt="이름 로고">
-        </div>
-        <button class="hamburger-menu" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-         <div class="navbar">
-          <ul>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <section class="first-section">
-      <div class="about">
-        <div class="box-wrap">
-          <div class="box">
-            <img src="./img/증명사진.jpg" alt="증명 사진">
+      <div class="scroll-progress" id="scroll-progress"></div>
+      <header>
+        <div class="gnb">
+          <div class="header-logo">
+            <img src="./img/ParkJin.svg" alt="이름 로고" />
+          </div>
+          <button class="hamburger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="navbar">
+            <ul>
+              <li>About</li>
+              <li>Skills</li>
+              <li>Projects</li>
+              <li>Contact</li>
+            </ul>
           </div>
         </div>
-        <div class="about-text-wrap">
-          <div class="about-text-box">
-            <div class="text-box">
-              <h1 id="typing-text"></h1>
+      </header>
+      <section class="first-section">
+        <div class="about">
+          <div class="box-wrap">
+            <div class="box">
+              <img src="./img/증명사진.jpg" alt="증명 사진" />
             </div>
-            <p class="about-me">프론트엔드 개발의 길을 택하며 전공을 바꾸는 일은 어려웠지만, <span>Benjamin Franklin</span>의 말처럼 <span>'성공의 비밀은 목표를 향한 끈기 있는 노력에 있다'</span>는 이 한 마디가 저의 인생의 지침이 되었습니다. 어떤 어려움이든 강한 의지와 끈기로 극복하며, 포기하지 않고 목표를 향해 나아가는 모습을 끝까지 보여주겠습니다. 이 길은 어렵겠지만, 끝에는 큰 성취가 기다리고 있을 것이라 믿습니다.</p>
+          </div>
+          <div class="about-text-wrap">
+            <div class="about-text-box">
+              <div class="text-box">
+                <h1 id="typing-text"></h1>
+              </div>
+              <p class="about-me">
+                프론트엔드 개발의 길을 택하며 전공을 바꾸는 일은 어려웠지만,
+                <span>Benjamin Franklin</span>의 말처럼
+                <span>'성공의 비밀은 목표를 향한 끈기 있는 노력에 있다'</span>는
+                이 한 마디가 저의 인생의 지침이 되었습니다. 어떤 어려움이든 강한
+                의지와 끈기로 극복하며, 포기하지 않고 목표를 향해 나아가는
+                모습을 끝까지 보여주겠습니다. 이 길은 어렵겠지만, 끝에는 큰
+                성취가 기다리고 있을 것이라 믿습니다.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section> <!-- 첫번째 섹션 끝 -->
+      </section>
+      <!-- 첫번째 섹션 끝 -->
 
-    <section class="second-section">
-      <div>
-        <h2>Skills</h2>
-      </div>
-      <ul>
-        <li>
-          <div class="skills-name">HTML5</div>
-          <div class="ability-bar">
-            <div class="ability-gage">
-              <div class="ability-percent">
-                <span class="percent">
-                  80%
-                </span>
+      <section class="second-section">
+        <div>
+          <h2>Skills</h2>
+        </div>
+        <ul>
+          <li>
+            <div class="skills-name">HTML5</div>
+            <div class="ability-bar">
+              <div class="ability-gage">
+                <div class="ability-percent">
+                  <span class="percent"> 80% </span>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <div class="skills-name">CSS3</div>
-          <div class="ability-bar">
-            <div class="ability-gage">
-              <div class="ability-percent">
-                <span class="percent">
-                  80%
-                </span>
+          </li>
+          <li>
+            <div class="skills-name">CSS3</div>
+            <div class="ability-bar">
+              <div class="ability-gage">
+                <div class="ability-percent">
+                  <span class="percent"> 80% </span>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <div class="skills-name">JavaScript</div>
-          <div class="ability-bar">
-            <div class="ability-gage Js">
-              <div class="ability-percent">
-                <span class="percent">
-                  70%
-                </span>
+          </li>
+          <li>
+            <div class="skills-name">JavaScript</div>
+            <div class="ability-bar">
+              <div class="ability-gage Js">
+                <div class="ability-percent">
+                  <span class="percent"> 70% </span>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <div class="skills-name">TypeScript</div>
-          <div class="ability-bar">
-            <div class="ability-gage Ts">
-              <div class="ability-percent">
-                <span class="percent">
-                  40%
-                </span>
+          </li>
+          <li>
+            <div class="skills-name">TypeScript</div>
+            <div class="ability-bar">
+              <div class="ability-gage Ts">
+                <div class="ability-percent">
+                  <span class="percent"> 40% </span>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <div class="skills-name">React</div>
-          <div class="ability-bar">
-            <div class="ability-gage React">
-              <div class="ability-percent">
-                <span class="percent">
-                  70%
-                </span>
+          </li>
+          <li>
+            <div class="skills-name">React</div>
+            <div class="ability-bar">
+              <div class="ability-gage React">
+                <div class="ability-percent">
+                  <span class="percent"> 70% </span>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <div class="skills-name">Styled-Components</div>
-          <div class="ability-bar">
-            <div class="ability-gage Sc">
-              <div class="ability-percent">
-                <span class="percent">
-                  60%
-                </span>
+          </li>
+          <li>
+            <div class="skills-name">Styled-Components</div>
+            <div class="ability-bar">
+              <div class="ability-gage Sc">
+                <div class="ability-percent">
+                  <span class="percent"> 60% </span>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-        <li>
-          <div class="skills-name">Github</div>
-          <div class="ability-bar">
-            <div class="ability-gage Gh">
-              <div class="ability-percent">
-                <span class="percent">
-                  50%
-                </span>
+          </li>
+          <li>
+            <div class="skills-name">Github</div>
+            <div class="ability-bar">
+              <div class="ability-gage Gh">
+                <div class="ability-percent">
+                  <span class="percent"> 50% </span>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
+          </li>
+        </ul>
+      </section>
+      <!-- 두번째 섹션 끝 -->
 
-      </ul>
-    </section> <!-- 두번째 섹션 끝 -->
-
-    <section class="third-section">
-      <div class="projects">
-        <div class="project-text">
-          <h2>Projects</h2>
+      <section class="third-section">
+        <div class="projects">
+          <div class="project-text">
+            <h2>Projects</h2>
+          </div>
+          <div class="box-container">
+            <div class="flip">
+              <div class="card">
+                <div class="card-front">
+                  <div class="card-hover">
+                    <p>Click</p>
+                  </div>
+                  <div class="img-box">
+                    <img src="./img/트립토크 1.jpg" alt="" />
+                  </div>
+                  <div class="text-wrap">
+                    <div class="text">
+                      <h2>Trip-talk</h2>
+                    </div>
+                    <p class="intro">
+                      다양한 국내 여행지에서의 추억과 경험을 공유하는
+                      커뮤니티입니다.
+                    </p>
+                    <p class="addintro">
+                      React, TypeScript를 사용하여 여행 일정을 등록하고 공유하는
+                      웹사이트 입니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-back">
+                  <div class="back-container">
+                    <div class="back-wrap">
+                      <div class="period">
+                        <p>Period: 2023.09.12 ~ 2023.10.26</p>
+                      </div>
+                      <div class="tech">
+                        <p>
+                          # Tech <br /><span
+                            >React Axios Redux Styled-Components
+                            TypeScript</span
+                          >
+                        </p>
+                      </div>
+                      <div class="work">
+                        <p>
+                          # My Work <br />
+                          <span>회원기능 일정등록 일정상세페이지</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="button-group">
+                      <a href="https://github.com/triptalk-4/triptalk-frontend"
+                        ><button>source code</button></a
+                      >
+                      <a
+                        href="https://antique-koala-cd8.notion.site/Trip-Talk-72ca174db6d74dc3b0f6c3718c99b4e1"
+                        ><button>Develop log</button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="card">
+                <div class="card-front">
+                  <div class="card-hover">
+                    <p>Click</p>
+                  </div>
+                  <div class="img-box">
+                    <img src="./img/flim-thumbnail.jpg" alt="" />
+                  </div>
+                  <div class="text-wrap">
+                    <div class="text">
+                      <h2>Film</h2>
+                    </div>
+                    <p class="intro">
+                      TMDB API를 사용한 영화 정보 웹사이트 입니다.
+                    </p>
+                    <p class="addintro">
+                      영화를 검색하고, 영화 정보를 알 수 있는 React 웹사이트
+                      입니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-back">
+                  <div class="back-container">
+                    <div class="back-wrap">
+                      <div class="period">
+                        <p>period: 2023.07.31 ~ 2023.08.25</p>
+                      </div>
+                      <div class="tech">
+                        <p>
+                          # Tech <br /><span
+                            >React Axios Styled-Components Firebase</span
+                          >
+                        </p>
+                      </div>
+                      <div class="work">
+                        <p>
+                          # My Work <br />
+                          <span>디자인, 프론트엔드</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="button-group">
+                      <a href="https://github.com/jin-park0115/film"
+                        ><button>source code</button></a
+                      >
+                      <a href="#none"><button>none</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="card">
+                <div class="card-front">
+                  <div class="card-hover">
+                    <p>Click</p>
+                  </div>
+                  <div class="img-box">
+                    <img src="./img/반응형 포폴.jpg" alt="" />
+                  </div>
+                  <div class="text-wrap">
+                    <div class="text">
+                      <h2>Portfolio</h2>
+                    </div>
+                    <p class="intro">
+                      프론트엔드 개발자 포트폴리오 웹사이트 입니다.
+                    </p>
+                    <p class="addintro">
+                      Vanilla-JS를 사용하여 개발한 반응형 웹사이트 입니다.
+                      몇가지 동적인 요소를 넣어 인터랙티브한 페이지로
+                      만들었습니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-back">
+                  <div class="back-container">
+                    <div class="back-wrap">
+                      <div class="period">
+                        <p>period: 2023.11.13 ~ 2023.12.02</p>
+                      </div>
+                      <div class="tech">
+                        <p>
+                          # Tech <br /><span>HTML5, CSS3, JavaScript, PS</span>
+                        </p>
+                      </div>
+                      <div class="work">
+                        <p>
+                          # My Work <br />
+                          <span>디자인, 프론트엔드</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="button-group">
+                      <a href="https://github.com/jin-park0115/portfolio"
+                        ><button>source code</button></a
+                      >
+                      <a href="#none"><button>none</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="box-container">
-          <div class="flip">
-            <div class="card">
-              <div class="card-front">
-                <div class="card-hover">
-                  <p>Click</p>
-                </div>
-                <div class="img-box">
-                  <img src="./img/트립토크 1.jpg" alt="">
-                </div>
-                <div class="text-wrap">
-                  <div class="text">
-                    <h2>Trip-talk</h2>
-                  </div>
-                  <p class="intro">다양한 국내 여행지에서의 추억과 경험을 공유하는 커뮤니티입니다.</p>
-                  <p class="addintro">React, TypeScript를 사용하여 여행 일정을 등록하고 공유하는 웹사이트 입니다.</p>
-                </div>
-              </div>
-              <div class="card-back">
-                <div class="back-container">
-                  <div class="back-wrap">
-                    <div class="period">
-                      <p>Period: 2023.09.12 ~ 2023.10.26</p>
-                    </div>
-                    <div class="tech">
-                      <p># Tech <br><span>React Axios Redux Styled-Components TypeScript</span></p>
-                    </div>
-                    <div class="work">
-                      <p># My Work <br> <span>회원기능 일정등록 일정상세페이지</span></p>
-                    </div>
-                  </div>
-                  <div class="button-group">
-                    <a href="https://github.com/triptalk-4/triptalk-frontend"><button>source code</button></a>
-                    <a href="https://antique-koala-cd8.notion.site/Trip-Talk-72ca174db6d74dc3b0f6c3718c99b4e1"><button>Develop log</button></a>
-                  </div>
-                </div>
-              </div>
+      </section>
+      <!-- 세번째 섹션 끝 -->
+      <section class="fourth-section">
+        <div class="contact">
+          <div class="title">
+            <h2>Contact</h2>
+          </div>
+          <div class="post-box">
+            <div class="post">
+              <p>Thank you</p>
+              <img src="./img/벚꽃.jpg" alt="" />
             </div>
           </div>
-          <div class="flip">
-            <div class="card">
-              <div class="card-front">
-                <div class="card-hover">
-                  <p>Click</p>
-                </div>
-                <div class="img-box">
-                  <img src="./img/flim-thumbnail.jpg" alt="">
-                </div>
-                <div class="text-wrap">
-                  <div class="text">
-                    <h2>Film</h2>
-                  </div>
-                  <p class="intro">TMDB API를 사용한 영화 정보 웹사이트 입니다.</p>
-                  <p class="addintro">영화를 검색하고, 영화 정보를 알 수 있는 React 웹사이트 입니다.</p>
-                </div>
-              </div>
-              <div class="card-back">
-                <div class="back-container">
-                  <div class="back-wrap">
-                    <div class="period">
-                      <p>period: 2023.09.12 ~ 2023.10.26</p>
-                    </div>
-                    <div class="tech">
-                      <p># Tech <br><span>React Axios Styled-Components Firebase</span></p>
-                    </div>
-                    <div class="work">
-                      <p># My Work <br> <span>디자인, 프론트엔드</span></p>
-                    </div>
-                  </div>
-                  <div class="button-group">
-                    <a href="https://github.com/jin-park0115/film"><button>source code</button></a>
-                    <a href="#none"><button>none</button></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flip">
-            <div class="card">
-              <div class="card-front">
-                <div class="card-hover">
-                  <p>Click</p>
-                </div>
-                <div class="img-box">
-                  <img src="./img/반응형 포폴.jpg" alt="">
-                </div>
-                <div class="text-wrap">
-                  <div class="text">
-                    <h2>Portfolio</h2>
-                  </div>
-                  <p class="intro">프론트엔드 개발자 포트폴리오 웹사이트 입니다.</p>
-                  <p class="addintro">Vanilla-JS를 사용하여 개발한 반응형 웹사이트 입니다. 몇가지 동적인 요소를 넣어 인터랙티브한 페이지로 만들었습니다.</p>
-                </div>
-              </div>
-              <div class="card-back">
-                <div class="back-container">
-                  <div class="back-wrap">
-                    <div class="period">
-                      <p>period: 2023.11.13 ~ 2023.12.02</p>
-                    </div>
-                    <div class="tech">
-                      <p># Tech <br><span>HTML5, CSS3, JavaScript, PS</span></p>
-                    </div>
-                    <div class="work">
-                      <p># My Work <br> <span>디자인, 프론트엔드</span></p>
-                    </div>
-                  </div>
-                  <div class="button-group">
-                    <a href="https://github.com/jin-park0115/portfolio"><button>source code</button></a>
-                    <a href="#none"><button>none</button></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="contact-icon">
+            <a href="mailto:parkjin0115@naver.com">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+            <a href="https://github.com/jin-park0115">
+              <i class="fa-brands fa-github"></i>
+            </a>
           </div>
         </div>
+      </section>
+      <div class="top-btn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
       </div>
-    </section>
-    <!-- 세번째 섹션 끝 -->
-    <section class="fourth-section">
-      <div class="contact">
-        <div class="title">
-          <h2>Contact</h2>
-        </div>
-        <div class="post-box">
-          <div class="post">
-            <p>Thank you</p>
-            <img src="./img/벚꽃.jpg" alt="">
-          </div>
-        </div>
-        <div class="contact-icon">
-          <a href="mailto:parkjin0115@naver.com">
-            <i class="fa-regular fa-envelope"></i>
-          </a>
-          <a href="https://github.com/jin-park0115">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-    <div class="top-btn" onclick="scrollToTop()">
-      <i class="fas fa-arrow-up"></i>
     </div>
-
-  </div>
-  <script src="./Js/header.js"></script>
-  <script src="./JS/scroll-progress.js"></script>
-  <script src="./Js/typing-animation.js"></script>
-  <script src="./Js/ability-bar.js"></script>
-  <script src="./Js/navbar.js"></script>
-  <script>
-    let flips = document.querySelectorAll('.flip');
-    flips.forEach(function(flip) {
-      flip.addEventListener('click', function() {
-        this.classList.toggle('flipped')
-      })
-    })
-    function toggleMenu() {
-      const hamburger = document.querySelector('.hamburger-menu')
-      const navbar = document.querySelector('.navbar');
-      navbar.classList.toggle('show')
-      hamburger.classList.toggle('active')
-    }
-    function scrollToTop() {
-      window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+    <script src="./Js/header.js"></script>
+    <script src="./JS/scroll-progress.js"></script>
+    <script src="./Js/typing-animation.js"></script>
+    <script src="./Js/ability-bar.js"></script>
+    <script src="./Js/navbar.js"></script>
+    <script>
+      let flips = document.querySelectorAll(".flip");
+      flips.forEach(function (flip) {
+        flip.addEventListener("click", function () {
+          this.classList.toggle("flipped");
         });
-    }
-  </script>
-</body>
+      });
+      function toggleMenu() {
+        const hamburger = document.querySelector(".hamburger-menu");
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("show");
+        hamburger.classList.toggle("active");
+      }
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+    </script>
+  </body>
 </html>
